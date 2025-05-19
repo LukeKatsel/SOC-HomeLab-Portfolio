@@ -1,2 +1,23 @@
 # Auto detect text files and perform LF normalization
+# Ensure consistent line endings
 * text=auto
+
+# Treat shell scripts as text
+*.sh text eol=lf
+
+# Set language for common file types (improves GitHub linguist detection)
+*.py linguist-language=Python
+*.md linguist-language=Markdown
+*.yaml linguist-language=YAML
+*.yml linguist-language=YAML
+*.conf linguist-language=INI
+*.log linguist-language=Text
+
+# Avoid diffing large files like PCAPs
+*.pcap binary
+*.pcapng binary
+
+# Disable diffing on large binary files
+*.zip binary
+*.gz binary
+*.tgz binary

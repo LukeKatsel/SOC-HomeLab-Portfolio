@@ -1,0 +1,29 @@
+# OS-generated
+.DS_Store
+Thumbs.db
+
+# Editor and IDE folders
+.vscode/
+.idea/
+*.swp
+
+# System/environment folders
+__pycache__/
+env/
+venv/
+*.log
+
+# VM or backup files
+*.bak
+*.ova
+*.vmdk
+
+# Security Onion or pfSense system exports (unless redacted)
+*.conf
+*.key
+*.pem
+*.pcap
+
+# Optional: logs from your exercises
+*.log
+logs/
